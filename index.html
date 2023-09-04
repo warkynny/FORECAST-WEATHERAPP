@@ -13,104 +13,105 @@
 
 <body>
 
-    <div class="container">
-        <div class="weather-app">
-            <form class="search-form" id="search-city">
-                <div class="row">
-                    <div class="col-8">
-                        <input type="search" placeholder="Type a city..." autofocus="on" autocomplete="off"
-                            id="city-input" class="form-control">
-                    </div>
-                    <div class="col-4">
-                        <input class="btn btn-primary" type="submit" value="Search">
-                    </div>
-                </div>
-            </form>
-            <div class="weatherapp">
-                <h1 id="city-name"> Nairobi</h1>
-                <ul>
-                    <li>
-                        <div id="current-time"></div>
-                    </li>
-                    <li>
-                        <span id="description">Clear</span>
-                    </li>
-                </ul>
-                <div class="row">
-                    <div class="col-6">
-                        <div class="d-flex weather-temperature">
-                            <img src="" alt="" id="icon" />
-                            <div>
-                                <strong id="temperature"></strong><span class="units"><a href="#" id="celsius-link"
-                                        class="active">˚C</a> |
-                                    <a href="#" id="fahrenheit-link"> ˚F</a></span>
-                            </div>
+    <body>
+    
+        <div class="container">
+            <div class="weather-app">
+                <form class="search-form" id="search-city">
+                    <div class="row">
+                        <div class="col-8">
+                            <input type="search" placeholder="Type a city..." autofocus="on" autocomplete="off"
+                                id="city-input" class="form-control">
+                        </div>
+                        <div class="col-4">
+                            <input class="btn btn-primary" type="submit" value="Search">
                         </div>
                     </div>
-                    <div class="col-6">
-                        <ul>
-                            <li>
-                                Precipitation: <span id="precipitation">0%</span>
-                            </li>
-                            <li>
-                                Humidity: <span id="hum">40%</span>
-                            </li>
-                            <li>
-                                Wind: <span id="wind">6 km/hr</span>
-                            </li>
-                        </ul>
+                </form>
+                <div class="weatherapp">
+                    <h1 id="city-name"> Nairobi</h1>
+                    <ul>
+                        <li>
+                            <div id="current-time"></div>
+                        </li>
+                        <li>
+                            <span id="description">Clear</span>
+                        </li>
+                    </ul>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="d-flex weather-temperature">
+                                <img src="" alt="" id="icon" />
+                                <div>
+                                    <strong id="temperature"></strong><span class="units"><a href="#" id="celsius-link"
+                                            class="active">˚C</a> | <a href="#" id="fah"> ˚F</a></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <ul>
+                                <li>
+                                    Precipitation: <span id="precipitation">0%</span>
+                                </li>
+                                <li>
+                                    Humidity: <span id="hum">40%</span>
+                                </li>
+                                <li>
+                                    Wind: <span id="wind">6 km/hr</span>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <p class="weekly-forecast">
-            <div class="grid text-center row">
-                <div class="col-1">Sat
-                    <br />
-                    🌤
-                    <br />
-                    <span class="degree">23°C</span>
+                <p class="weekly-forecast">
+                <div class="grid text-center row">
+                    <div class="col-1">Sat
+                        <br />
+                        🌤
+                        <br />
+                        <span class="degree">23°C</span>
+                    </div>
+                    <div class="col-1">Sun
+                        <br />
+                        🌤
+                        <br />
+                        <span class="degree">23°C</span>
+                    </div>
+                    <div class="col-1">Mon
+                        <br />
+                        🌧
+                        <br />
+                        <span class="degree">22°C</span>
+                    </div>
+                    <div class="col-1">Tue
+                        <br />
+                        🌧
+                        <br />
+                        <span class="degree">21°C</span>
+                    </div>
+                    <div class="col-1">Wed
+                        <br />
+                        🌧
+                        <br />
+                        <span class="degree">20°C</span>
+                    </div>
+                    <div class="col-1">Thu
+                        <br />
+                        🌧
+                        <br />
+                        <span class="degree">19°C</span>
+                    </div>
                 </div>
-                <div class="col-1">Sun
-                    <br />
-                    🌤
-                    <br />
-                    <span class="degree">23°C</span>
+                </p>
+                <div>
+                    <small>
+                        <a href="https://github.com/warkynny/FORECAST-WEATHERAPP" target="_blank">Open-source code</a>
+                        by Lilian Wakini
+                    </small>
                 </div>
-                <div class="col-1">Mon
-                    <br />
-                    🌧
-                    <br />
-                    <span class="degree">22°C</span>
-                </div>
-                <div class="col-1">Tue
-                    <br />
-                    🌧
-                    <br />
-                    <span class="degree">21°C</span>
-                </div>
-                <div class="col-1">Wed
-                    <br />
-                    🌧
-                    <br />
-                    <span class="degree">20°C</span>
-                </div>
-                <div class="col-1">Thu
-                    <br />
-                    🌧
-                    <br />
-                    <span class="degree">19°C</span>
-                </div>
-            </div>
-            </p>
-            <div>
-                <small>
-                    <a href="https://github.com/warkynny/FORECAST-WEATHERAPP" target="_blank">Open-source code</a>
-                    by Lilian Wakini
-                </small>
             </div>
         </div>
-    </div>
-    <script src="src/index.js"></script>
-</body>
-
-</html>
+        <script src="src/index.js"></script>
+    </body>
+    
+    </html>
