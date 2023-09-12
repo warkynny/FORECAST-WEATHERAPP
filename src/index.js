@@ -52,21 +52,21 @@ function updateDateTime() {
     }
 
     function switchTemperatureUnit(unit) {
-      let temperatureElement = document.querySelector("#temperature");
-      let temperatureUnitElement = document.querySelector("#temperature-unit");
-      let celsiusLink = document.querySelector("#celsius-link");
-      let fahrenheitLink = document.querySelector("#fahrenheit-link");
+  let temperatureElement = document.querySelector("#temperature");
+  let celsiusLink = document.querySelector("#celsius-link");
+  let fahrenheitLink = document.querySelector("#fahrenheit-link");
 
-      if (unit === "C") {
-        celsiusLink.classList.add("active");
-        fahrenheitLink.classList.remove("active");
-        temperatureUnitElement.textContent = "°C";
-      } else {
-        celsiusLink.classList.remove("active");
-        fahrenheitLink.classList.add("active");
-        temperatureUnitElement.textContent = "°F";
-      }
-    }
+  if (unit === "C") {
+    celsiusLink.classList.add("active");
+    fahrenheitLink.classList.remove("active");
+    temperatureElement.textContent = "°C";
+  } else {
+    celsiusLink.classList.remove("active");
+    fahrenheitLink.classList.add("active");
+    temperatureElement.textContent = "°F";
+  }
+}
+
 
     function getCurrentLocation() {
       navigator.geolocation.getCurrentPosition(function (position) {
